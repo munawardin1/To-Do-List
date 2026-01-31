@@ -43,7 +43,7 @@ body {
   gap: 0.5rem;
 }
 #TaskList {
-  height: 70vh;
+  height: 55vh;
   overflow-y: scroll;
   padding-right: 5px;
   display: flex;
