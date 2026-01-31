@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(203, 202, 202);
+  height: 100vh;
+  overflow: hidden;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.container {
+  max-width: 95%;
+  margin: 0 auto 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: rgb(203, 202, 202);
+  position: relative;
+}
+.top-section {
+  position: fixed;
+  top: 0;
+  margin: 0 auto 0 auto;
+  padding: 1rem;
+  background: rgb(203, 202, 202);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  border-bottom: 2px solid rgb(103, 98, 98);
+  max-width: 95%;
+}
+.input_container {
+  display: flex;
+  gap: 0.5rem;
+}
+#TaskList {
+  height: 70vh;
+  overflow-y: scroll;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 7.5rem;
+}
+#TaskList::-webkit-scrollbar {
+  display: none;
+}
+input[type="text"] {
+  flex: 1;
+  max-width: 70%;
+  color: white;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #8c8c8a;
+  min-width: 0;
+}
+input::placeholder {
+  color: white;
+  font-size: 1rem;
+}
+.btn,
+#addTask {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1303f4;
+  color: rgb(252, 245, 245);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+ul {
+  list-style: square;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.outer-div {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.buttonDiv {
+  display: flex;
+  gap: 1rem;
+  height: 90%;
+}
+.clearbtn {
+  color: rgb(255, 3, 3);
+  margin-right: 2rem;
+}
+.edit-btn {
+  color: blue;
+}
+#del {
+  color: red;
+}
+.buttonDiv button {
+  width: 2.5rem;
+  background: transparent;
+  height: 2.5rem;
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+li {
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  min-height: 3rem;
+  padding: 0.5rem;
+  background-color: #858584;
+  flex-shrink: 0;
+}
+
+li span {
+  flex: 1;
+  font-size: 1.2rem;
+  color: white;
+}
